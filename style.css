@@ -173,3 +173,35 @@
    line-height: 18px;
    color: #FFFFFF;
 }
+
+.photo-grid {
+   max-width: 1184px;
+   width: 100%;
+   margin: auto;
+
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   gap: 16px;
+   justify-content: center;
+   align-content: center;
+}
+
+@media screen and (max-width: 1240px) {
+   .photo-grid {
+      max-width: min-content;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 14px;
+   }
+}
+
+.photo-grid__item {
+   width: 284px;
+}
+
+@media screen and (max-width: 1240px) {
+   .photo-grid__item {
+      width: 300px;
+   }
+}
