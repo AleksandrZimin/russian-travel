@@ -42,31 +42,32 @@
 
 .page {
    width: 100%;
-   height: auto;
    display: flex;
    flex-direction: column;
-   align-items: center;
    margin: auto;
    justify-content: center;
+   align-items: center;
    background-color: #2A2C2F;
    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
    font-weight: 400;
 }
 
 .content {
-   width: 964px;
+   max-width: 964px;
    margin: auto;
 }
 
 .header {
-   width: 1280px;
+   width: 100vw;
    display: flex;
    justify-content: space-between;
    align-items: end;
    padding: 28px 48px 56px 48px;
+   box-sizing: border-box;
 }
 
 .header__logo {
+   display: block;
    width: 176px;
    height: 52px;
 }
@@ -91,3 +92,41 @@
    margin: auto;
 }
 
+.lead__title {
+   width: 720px;
+   font-size: 96px;
+   font-weight: 900;
+   line-height: 100px;
+   color: #FFFFFF;
+   margin: auto;
+   text-align: center;
+}
+
+.lead__subtitle {
+   width: 640px;
+   font-size: 30px;
+   font-weight: 400;
+   line-height: 36px;
+   color: #FFFFFF;
+   margin: auto;
+   text-align: center;
+   padding: 32px 0 64px 0;
+}
+
+.lead__image {
+   /* max-width: 984px;
+   min-width: 928px; */
+   display: block;
+   margin: auto;
+   width: 100%;
+}
+
+.lead__caption {
+   font-size: 10px;
+   font-weight: 400;
+   line-height: 14px;
+   margin: 8px 0 0 0;
+   letter-spacing: 1.5px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
