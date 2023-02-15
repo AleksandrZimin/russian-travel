@@ -50,6 +50,7 @@
    background-color: #2A2C2F;
    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
    font-weight: 400;
+   font-style: normal;
 }
 
 .content {
@@ -204,4 +205,113 @@
    .photo-grid__item {
       width: 300px;
    }
+}
+
+.places {
+   width: calc(100% - (148px*2));
+   margin: 0 auto;
+   padding: 92px 0;
+}
+
+@media screen and (max-width: 1070px) {
+   .places {
+      width: calc(100% - (48px*2));
+   }
+}
+
+.place {
+   display: grid;
+   grid-gap: 48px 40px;
+   grid-template-columns: repeat(2, minmax(min-content, max-content));
+   grid-template-rows: repeat(2, minmax(min-content, max-content));
+   grid-template-areas: 
+   "title website"
+   "image paragraph";
+   justify-content: center;
+   padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1070px) {
+   .place {
+      grid-gap: 48px 32px;
+   }
+}
+
+.place:last-child {
+   padding-bottom: 0;
+}
+
+.place__title {
+   grid-area: title;
+   width: 460px;
+   margin: 0;
+   font-weight: 900;
+   font-size: 72px;
+   line-height: 76px;
+   color: #FFFFFF;
+}
+
+@media screen and (max-width: 1070px) {
+   .place__title {
+      width: 440px;
+   }
+}
+
+.place__website {
+   grid-area: website;
+   align-self: end;
+}
+
+.place__paragraph {
+   grid-area: paragraph;
+}
+
+.place__paragraph_item {
+   width: 484px;
+   margin: 0 0 26px 0;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 163%;
+   color: #FFFFFF;
+}
+
+@media screen and (max-width: 1070px) {
+   .place__paragraph_item {
+      width: 456px;
+   }
+}
+
+.place__paragraph_item:last-child {
+   margin: 0;
+}
+
+.place__image {
+   grid-area: image;
+   width: 460px;
+}
+
+@media screen and (max-width: 1070px) {
+   .place__image {
+      width: 440px;
+   }
+}
+
+.place__url-heading {
+   width: 456px;
+   margin: 0 0 12px 0;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 12px;
+   letter-spacing: 2px;
+   color: #AAAAAA;
+}
+
+.place__link {
+   width: 456px;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 22px;
+   text-decoration-line: underline;
+   color: #FFFFFF;
+
 }
