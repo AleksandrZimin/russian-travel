@@ -1,0 +1,48 @@
+.place {
+   width: min-content;
+   display: grid;
+   grid-gap: 48px 40px;
+   grid-template-columns: repeat(2, min-content);
+   grid-template-rows: repeat(2, minmax(min-content, max-content));
+   grid-template-areas: 
+   "title website"
+   "image paragraph";
+   margin: 0 auto;
+   justify-content: center;
+   padding-bottom: 80px;
+   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1070px) {
+   .place {
+      grid-gap: 48px 32px;
+   }
+}
+
+@media screen and (max-width: 990px) {
+   .place {
+      grid-gap: 48px 28px;
+      padding-bottom: 72.25px;
+      grid-template-columns: 1fr 352px;
+   }
+}
+
+@media screen and (max-width: 753px) {
+   .place {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      align-items: center;
+      padding-bottom: 50px;
+      box-sizing: border-box;
+      justify-content: flex-start;
+      align-content: center;
+      flex-wrap: wrap;
+      gap: 0;
+   }
+}
+
+.place:last-child {
+   padding-bottom: 0;
+}

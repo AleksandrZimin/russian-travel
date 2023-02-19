@@ -1,0 +1,10 @@
+.place__paragraph {
+   width: 100%;
+   grid-area: paragraph;
+}
+
+@media screen and (max-width: 753px) {
+   .place__paragraph_item {
+      width: 288px;
+   }
+}
