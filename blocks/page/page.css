@@ -1,43 +1,42 @@
-
 @font-face {
-	font-family: 'Inter'; 
+	font-family: 'Inter';
 	src: local('Inter'),
-		url(../../fonts/Inter/Inter-Black.otf); 
+		url(../../fonts/Inter/Inter-Black.otf);
 }
 @font-face {
-	font-family: 'Inter'; 
+	font-family: 'Inter';
 	src: local('Inter'),
-		url(../../fonts/Inter/Inter-Bold.otf); 
+		url(../../fonts/Inter/Inter-Bold.otf);
 }
 @font-face {
-	font-family: 'Inter'; 
+	font-family: 'Inter';
 	src: local('Inter'),
-		url(../../fonts/Inter/Inter-ExtraBold.otf); 
+		url(../../fonts/Inter/Inter-ExtraBold.otf);
 }
 @font-face {
-	font-family: 'Inter'; 
+	font-family: 'Inter';
 	src: local('Inter'),
-		url(../../fonts/Inter/Inter-ExtraLight.otf); 
+		url(../../fonts/Inter/Inter-ExtraLight.otf);
 }
 @font-face {
-	font-family: 'Inter'; 
+	font-family: 'Inter';
 	src: local('Inter'),
-		url(../../fonts/Inter/Inter-Light.otf); 
+		url(../../fonts/Inter/Inter-Light.otf);
 }
 @font-face {
-	font-family: 'Inter'; 
+	font-family: 'Inter';
 	src: local('Inter'),
-		url(../../fonts/Inter/Inter-Medium.otf); 
+		url(../../fonts/Inter/Inter-Medium.otf);
 }
 @font-face {
-	font-family: 'Inter'; 
+	font-family: 'Inter';
 	src: local('Inter'),
-		url(../../fonts/Inter/Inter-Regular.otf); 
+		url(../../fonts/Inter/Inter-Regular.otf);
 }
 @font-face {
-	font-family: 'Inter'; 
+	font-family: 'Inter';
 	src: local('Inter'),
-		url(../../fonts/Inter/Inter-V.ttf); 
+		url(../../fonts/Inter/Inter-V.ttf);
 }
 
 .page {
