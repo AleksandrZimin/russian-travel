@@ -1,0 +1,54 @@
+.cover__card {
+   position: relative;
+   width: calc(100% - (40px*2));
+   min-height: 740px;
+   display: flex;
+   margin: 0 auto;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: no-repeat url("../../../images/__background.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+@media screen and (max-width: 1070px) {
+   .cover__card {
+      width: 100%;
+      min-height: 640px;
+   }
+}
+
+@media screen and (max-width: 900px) {
+   .cover__card {
+      min-height: 480px;
+   }
+}
+
+@media screen and (max-width: 750px) {
+   .cover__card {
+      min-height: 200px;
+   }
+}
+
+.cover__card::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   width: 100%;
+   height: 100%;
+   background: #2A2C2F;
+   opacity: .3;
+   transition: 400ms ease-in-out;
+}
+
+.cover__card:hover::before {
+   opacity: .8;
+   cursor: pointer;
+
+   transition: 300ms ease-in;
+}
