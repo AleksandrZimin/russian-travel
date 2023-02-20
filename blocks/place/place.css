@@ -2,7 +2,7 @@
    width: min-content;
    display: grid;
    grid-gap: 48px 40px;
-   grid-template-columns: repeat(2, min-content);
+   grid-template-columns: repeat(2, max-content);
    grid-template-rows: repeat(2, minmax(min-content, max-content));
    grid-template-areas: 
    "title website"
@@ -32,7 +32,6 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      margin: 0 auto;
       align-items: center;
       padding-bottom: 50px;
       box-sizing: border-box;

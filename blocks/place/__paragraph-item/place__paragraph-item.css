@@ -1,5 +1,6 @@
 .place__paragraph-item {
-   width: 484px;
+   width: 100%;
+   max-width: 484px;
    margin: 0;
    margin-bottom: 27px;
    font-weight: 400;
@@ -10,13 +11,13 @@
 
 @media screen and (max-width: 1070px) {
    .place__paragraph-item {
-      width: 460px;
+      max-width: 460px;
    }
 }
 
 @media screen and (max-width: 990px) {
    .place__paragraph-item {
-      width: 352px;
+      max-width: 352px;
       font-size: 16px;
       line-height: 26px;
       margin-bottom: 25px;
@@ -25,7 +26,7 @@
 
 @media screen and (max-width: 753px) {
    .place__paragraph-item {
-      width: 285px;
+      max-width: 285px;
       text-align: left;
       line-break: auto;
       margin: 0 auto;

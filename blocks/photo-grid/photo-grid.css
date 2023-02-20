@@ -20,7 +20,6 @@
 
 @media screen and (max-width: 1000px) {
    .photo-grid {
-      max-width: min-content;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(6, 1fr);
       gap: 16px;
@@ -29,7 +28,6 @@
 
 @media screen and (max-width: 750px) {
    .photo-grid {
-      max-width: min-content;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(12, 1fr);
       gap: 12px;

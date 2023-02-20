@@ -1,5 +1,6 @@
 .page {
    width: 100%;
+   max-width: 1280px;
    display: flex;
    flex-direction: column;
    margin: auto;
@@ -9,4 +10,22 @@
    font-family: 'Inter', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
    font-weight: 400;
    font-style: normal;
+}
+
+@media screen and (max-width: 1024px) {
+   .page {
+      max-width: 1024px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .page {
+      max-width: 768px;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .page {
+      max-width: 320px;
+   }
 }
