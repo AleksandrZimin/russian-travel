@@ -1,6 +1,6 @@
 .cover {
    position: relative;
-   width: calc(100vw - (48px*2));
+   width: calc(100% - (40px*2));
    min-height: 740px;
    display: flex;
    margin: 0 auto;
